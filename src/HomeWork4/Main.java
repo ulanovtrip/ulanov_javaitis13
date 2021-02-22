@@ -1,22 +1,23 @@
 package HomeWork4;
 
-import itis.oop.courses.*;
+import HomeWork4.courses.*;
 import HomeWork4.statistic.PrintRatingCourses;
 import HomeWork4.statistic.PrintRatingStudents;
 import HomeWork4.statistic.PrintRatingTutors;
-import itis.oop.students.Student;
-import itis.oop.students.StudentGenerator;
-import itis.oop.students.StudentsPrinter;
-import itis.oop.tutors.Tutor;
-import itis.oop.tutors.TutorGenerator;
-import itis.oop.tutors.TutorPrinter;
+import HomeWork4.students.Student;
+import HomeWork4.students.StudentGenerator;
+import HomeWork4.students.StudentsPrinter;
+import HomeWork4.tutors.Tutor;
+import HomeWork4.tutors.TutorGenerator;
+import HomeWork4.tutors.TutorPrinter;
+
 
 public class Main {
     public static void main(String[] args) {
         TutorGenerator tutorGenerator = new TutorGenerator();
         CourseGenerator courseGenerator = new CourseGenerator();
         StudentGenerator studentGenerator = new StudentGenerator();
-        CourseScoreGenerate  courseScoreGenerate = new CourseScoreGenerate();
+        CourseScoreGenerate courseScoreGenerate = new CourseScoreGenerate();
 
         Tutor[] tutors = tutorGenerator.getTutors(20);
         Course[] courses = courseGenerator.getCourses(6);

@@ -1,7 +1,8 @@
 package HomeWork4.courses;
 
 import HomeWork4.students.Student;
-import itis.oop.tutors.Tutor;
+import HomeWork4.tutors.Tutor;
+
 
 import java.util.Arrays;
 

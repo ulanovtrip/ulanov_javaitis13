@@ -1,7 +1,8 @@
 package HomeWork4.statistic;
 
-import itis.oop.courses.CourseScore;
-import itis.oop.students.Student;
+
+import HomeWork4.courses.CourseScore;
+import HomeWork4.students.Student;
 
 public class PrintRatingStudents {
 

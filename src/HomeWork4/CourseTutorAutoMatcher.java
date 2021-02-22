@@ -1,7 +1,9 @@
 package HomeWork4;
 
-import itis.oop.courses.Course;
-import itis.oop.tutors.Tutor;
+
+
+import HomeWork4.courses.Course;
+import HomeWork4.tutors.Tutor;
 
 import java.util.Random;
 

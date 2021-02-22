@@ -1,6 +1,6 @@
 package HomeWork4.students;
 
-import itis.oop.courses.CourseScore;
+import HomeWork4.courses.CourseScore;
 
 public class Student {
 

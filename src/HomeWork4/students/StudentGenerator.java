@@ -1,8 +1,10 @@
 package HomeWork4.students;
 
-import itis.oop.courses.Course;
-import itis.oop.courses.CourseScore;
-import itis.oop.courses.CourseScoreGenerate;
+
+
+import HomeWork4.courses.Course;
+import HomeWork4.courses.CourseScore;
+import HomeWork4.courses.CourseScoreGenerate;
 
 import java.util.Random;
 
