@@ -2,15 +2,17 @@ package HomeWork5;
 
 public class SequenceGenerator {
 
-    int size;
+    private int size;
+    private int bound;
+    private String id;
 
-    public SequenceGenerator(int size) {
+    public SequenceGenerator(String id, int size, int bound) {
+        this.id = id;
+        this.bound = bound;
         this.size = size;
     }
 
-    public int[] generateSequence() {
-        int[] sequence = new int[size];
-
-        return sequence;
+    public Sequence generateSequence() {
+        return new Sequence(id, size, bound);
     }
 }
