@@ -1,4 +1,4 @@
-package nestedclasses;
+package nested_inner_classes;
 
 public class Table {
     private static final int MAX_ENTRIES_COUNT = 10;

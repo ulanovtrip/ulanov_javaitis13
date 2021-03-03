@@ -1,4 +1,4 @@
-package nestedclasses;
+package nested_inner_classes;
 
 public class Main {
     public static void main(String[] args) {
