@@ -1,5 +1,7 @@
 package HomeWork6;
 
+import static HomeWork6.UtilsForHW6.*;
+
 public class MainTestDrive {
 
     public static void main(String[] args) {
@@ -14,9 +16,9 @@ public class MainTestDrive {
             return reversed;
         };
 
-        print("Reversed number: " + reversNumber.process(4567));
-        print("Reversed number: " + reversNumber.process(9876));
-        print("+++++++++++++++++++++++++++++++");
+        println("Reversed number: " + reversNumber.process(4567));
+        println("Reversed number: " + reversNumber.process(9876));
+        println("+++++++++++++++++++++++++++++++");
 
         // реализация удаления нулей из числа
         NumbersProcess removerZeroes = number -> {
@@ -36,9 +38,9 @@ public class MainTestDrive {
             return converted;
         };
 
-        print("Without zeroes: " + removerZeroes.process(10203040));
-        print("Without zeroes: " + removerZeroes.process(40070099));
-        print("+++++++++++++++++++++++++++++++");
+        println("Without zeroes: " + removerZeroes.process(10203040));
+        println("Without zeroes: " + removerZeroes.process(40070099));
+        println("+++++++++++++++++++++++++++++++");
 
         // замена нечетных цифр на ближайшее чётное снизу.
         NumbersProcess changeOddToEven = number -> {
@@ -54,9 +56,9 @@ public class MainTestDrive {
             return Integer.parseInt(clearedNum.toString());
         };
 
-        print("Updated num: " + changeOddToEven.process(234567));
-        print("Updated num: " + changeOddToEven.process(876543));
-        print("+++++++++++++++++++++++++++++++");
+        println("Updated num: " + changeOddToEven.process(234567));
+        println("Updated num: " + changeOddToEven.process(876543));
+        println("+++++++++++++++++++++++++++++++");
 
         // разворот исходной строки
         StringProcess reversString = string -> {
@@ -65,8 +67,8 @@ public class MainTestDrive {
             return reversed.toString();
         };
 
-        print("Reversed string: " + reversString.process("AbCdEfGhI"));
-        print("+++++++++++++++++++++++++++++++");
+        println("Reversed string: " + reversString.process("AbCdEfGhI"));
+        println("+++++++++++++++++++++++++++++++");
 
         // убрать все чилсла из строки
         StringProcess onlyLetters = string -> {
@@ -77,28 +79,12 @@ public class MainTestDrive {
             return withoutNumbers.toString();
         };
 
-        print("Deleted numbers: " + onlyLetters.process("w2r4t5 y7q1"));
-        print("Deleted numbers: " + onlyLetters.process("w234r4456t565 y78q10"));
-        print("+++++++++++++++++++++++++++++++");
+        println("Deleted numbers: " + onlyLetters.process("w2r4t5 y7q1"));
+        println("Deleted numbers: " + onlyLetters.process("w234r4456t565 y78q10"));
+        println("+++++++++++++++++++++++++++++++");
 
         // сделать все маленькие буквы большими
         StringProcess bigLetters = String::toUpperCase;
-        print("Only big letters: " + bigLetters.process("If two people get on like a house on fire"));
-    }
-
-
-
-    public static boolean isEven(char element) {
-        return Integer.valueOf(element) % 2 == 0;
-    }
-
-    public static int changeNumber(char element) {
-        int current = Integer.valueOf(String.valueOf(element));
-        int update = current - 1;
-        return update;
-    }
-
-    public static void print(Object object) {
-        System.out.println(object);
+        println("Only big letters: " + bigLetters.process("If two people get on like a house on fire"));
     }
 }
