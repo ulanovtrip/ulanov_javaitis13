@@ -1,5 +1,6 @@
 package HomeWork6;
 
+import static HomeWork6.UtilsForHW6.print;
 import static HomeWork6.UtilsForHW6.println;
 
 public class MainTestProcessor {
@@ -10,11 +11,17 @@ public class MainTestProcessor {
         NumbersAndStringsProcessor processor1 = new NumbersAndStringsProcessor(integerArray);
         NumbersAndStringsProcessor processor2 = new NumbersAndStringsProcessor(stringArray);
 
-        processor1.multiplyAllElements(number -> number * 2);
+        int[] changedArray = processor1.multiplyAllElements(number -> number * 2);
+        for (int j : changedArray) {
+            print(j + " ");
+        }
         println("");
         println("+++++++++++++++++++++++++++++++");
 
         //  :: - method reference operator, is used to call a method by referring to it with the help of its class directly.
-        processor2.makeAllUpperCase(String::toUpperCase);
+        String[] toUpperCaseArray = processor2.makeAllUpperCase(String::toUpperCase);
+        for (String s : toUpperCaseArray) {
+            print(s);
+        }
     }
 }

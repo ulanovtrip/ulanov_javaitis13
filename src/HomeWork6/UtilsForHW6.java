@@ -2,14 +2,18 @@ package HomeWork6;
 
 public class UtilsForHW6 {
 
-    public static boolean isEven(char element) {
-        return Integer.valueOf(element) % 2 == 0;
+    public static int revers(int num) {
+        int reversed = 0;
+        while (num != 0) {
+            int remainder = num % 10;
+            num /= 10;
+            reversed = reversed * 10 + remainder;
+        }
+        return reversed;
     }
 
-    public static int changeNumber(char element) {
-        int current = Integer.valueOf(String.valueOf(element));
-        int update = current - 1;
-        return update;
+    public static boolean isEven(int num) {
+        return num % 2 == 0;
     }
 
     public static void println(Object object) {

@@ -5,6 +5,7 @@ import static HomeWork6.UtilsForHW6.*;
 public class MainTestDrive {
 
     public static void main(String[] args) {
+
         // реализация разворота числа
         NumbersProcess reversNumber = number -> {
             int reversed = 0;
@@ -22,20 +23,18 @@ public class MainTestDrive {
 
         // реализация удаления нулей из числа
         NumbersProcess removerZeroes = number -> {
-            StringBuilder builder = new StringBuilder();
+            int clearedNum = 0;
             while (number != 0) {
                 int remainder = number % 10;
                 if (remainder == 0) {
                     number /= 10;
                     continue;
                 } else {
-                    builder.append(remainder);
+                    clearedNum = clearedNum * 10 + remainder;
                     number /= 10;
                 }
             }
-            String out = builder.reverse().toString();
-            int converted = Integer.valueOf(out);
-            return converted;
+            return revers(clearedNum);
         };
 
         println("Without zeroes: " + removerZeroes.process(10203040));
@@ -44,16 +43,20 @@ public class MainTestDrive {
 
         // замена нечетных цифр на ближайшее чётное снизу.
         NumbersProcess changeOddToEven = number -> {
-            char[] chars = String.valueOf(number).toCharArray();
-            StringBuilder clearedNum = new StringBuilder();
-            for (int i = 0; i < chars.length; i++) {
-                if (isEven(chars[i])) {
-                    clearedNum.append(chars[i]);
+            int changedNum = 0;
+            while (number != 0) {
+                int remainder = number % 10;
+                if (isEven(remainder)) {
+                    changedNum = changedNum * 10 + remainder;
+                    number /= 10;
                 } else {
-                    clearedNum.append(changeNumber(chars[i]));
+                    remainder -= 1;
+                    changedNum = changedNum * 10 + remainder;
+                    number /= 10;
                 }
             }
-            return Integer.parseInt(clearedNum.toString());
+
+            return revers(changedNum);
         };
 
         println("Updated num: " + changeOddToEven.process(234567));
