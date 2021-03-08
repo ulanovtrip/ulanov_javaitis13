@@ -11,7 +11,7 @@ public class MainTestProcessor {
         NumbersAndStringsProcessor processor1 = new NumbersAndStringsProcessor(integerArray);
         NumbersAndStringsProcessor processor2 = new NumbersAndStringsProcessor(stringArray);
 
-        int[] changedArray = processor1.multiplyAllElements(number -> number * 2);
+        int[] changedArray = processor1.process(number -> number * 2);
         for (int j : changedArray) {
             print(j + " ");
         }
@@ -19,7 +19,7 @@ public class MainTestProcessor {
         println("+++++++++++++++++++++++++++++++");
 
         //  :: - method reference operator, is used to call a method by referring to it with the help of its class directly.
-        String[] toUpperCaseArray = processor2.makeAllUpperCase(String::toUpperCase);
+        String[] toUpperCaseArray = processor2.process2(String::toUpperCase);
         for (String s : toUpperCaseArray) {
             print(s);
         }

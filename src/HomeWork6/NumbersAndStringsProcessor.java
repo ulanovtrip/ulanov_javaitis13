@@ -13,14 +13,14 @@ public class NumbersAndStringsProcessor {
         this.numbersProcess = numbersProcess;
     }
 
-    public int[] multiplyAllElements(NumbersProcess process) {
+    public int[] process(NumbersProcess process) {
         for (int i = 0; i < numbersProcess.length; i++) {
             numbersProcess[i] = process.process(numbersProcess[i]);
         }
         return numbersProcess;
     }
 
-    public String[] makeAllUpperCase(StringProcess process) {
+    public String[] process2(StringProcess process) {
         String[] changed = new String[stringProcess.length];
         for (int i = 0; i < stringProcess.length; i++) {
             changed[i] = process.process(stringProcess[i]);
