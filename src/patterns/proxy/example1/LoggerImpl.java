@@ -1,4 +1,4 @@
-package patterns.proxy;
+package patterns.proxy.example1;
 
 import java.time.LocalDateTime;
 
