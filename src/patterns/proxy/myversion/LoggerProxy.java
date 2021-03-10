@@ -1,4 +1,4 @@
-package patterns.proxy.example1;
+package patterns.proxy.myversion;
 
 import java.io.File;
 import java.io.FileWriter;

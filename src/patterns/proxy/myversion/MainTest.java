@@ -1,4 +1,4 @@
-package patterns.proxy.example1;
+package patterns.proxy.myversion;
 
 public class MainTest {
     public static void main(String[] args) {
