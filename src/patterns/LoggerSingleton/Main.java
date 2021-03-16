@@ -1,4 +1,4 @@
-package LoggerSingleton;
+package patterns.LoggerSingleton;
 
 public class Main {
     public static void main(String[] args) {

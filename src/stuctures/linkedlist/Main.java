@@ -1,6 +1,6 @@
-package linkedlist;
+package stuctures.linkedlist;
 
-import linkedlist.node.Node;
+import stuctures.linkedlist.node.Node;
 
 public class Main {
     public static void main(String[] args) {

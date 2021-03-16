@@ -1,4 +1,4 @@
-package LoggerSingleton;
+package patterns.LoggerSingleton;
 
 import java.util.Scanner;
 

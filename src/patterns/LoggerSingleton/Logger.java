@@ -1,4 +1,4 @@
-package LoggerSingleton;
+package patterns.LoggerSingleton;
 
 import java.time.LocalDateTime;
 import java.time.LocalTime;

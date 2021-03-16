@@ -1,4 +1,4 @@
-package linkedlist.node;
+package stuctures.linkedlist.node;
 
 public class Node {
     private int value;

@@ -2,6 +2,7 @@ package patterns.template_method;
 
 public abstract class StoreInDatabase {
 
+
     public void storeData() throws InterruptedException {
         connection();
         write();

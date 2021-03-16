@@ -1,4 +1,4 @@
-package LoggerSingleton;
+package patterns.LoggerSingleton;
 
 public class SimpleMath {
     private Logger logger;

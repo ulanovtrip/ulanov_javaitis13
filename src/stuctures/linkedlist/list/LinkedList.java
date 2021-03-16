@@ -1,4 +1,4 @@
-package linkedlist.list;
+package stuctures.linkedlist.list;
 
 public class LinkedList {
 
