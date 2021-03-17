@@ -38,7 +38,6 @@ public class ArrayList implements List {
             int[] tmpArray = new int[elements.length + elements.length / 2];
             for (int i = 0; i < elements.length; i++) {
                 tmpArray[i] = elements[i];
-
             }
             elements = tmpArray;
         }
