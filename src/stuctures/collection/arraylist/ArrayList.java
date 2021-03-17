@@ -53,7 +53,11 @@ public class ArrayList implements List {
 
     @Override
     public boolean contains(int element) {
-        // TODO
+        for (int i = 0; i < elements.length; i++) {
+            if (elements[i] == element) {
+                return true;
+            }
+        }
         return false;
     }
 
@@ -77,12 +81,18 @@ public class ArrayList implements List {
 
     @Override
     public void removeLast(int element) {
-        // TODO
+        int lastPosition = lastIndexOf(element);
+        removeAt(lastPosition);
     }
 
     @Override
     public void removeAll(int element) {
-        // TODO
+        int step = -1;
+        while (step < count) {
+            if (elements[++step] == element) {
+                removeAt(step);
+            }
+        }
     }
 
     @Override
@@ -100,18 +110,37 @@ public class ArrayList implements List {
 
     @Override
     public void removeAt(int index) {
-        // TODO
+        for (int i = index; i < count; i++) {
+            elements[i] = elements[i + 1];
+        }
+        count--;
     }
 
     @Override
     public int indexOf(int element) {
-        // TODO
+        int step = 0;
+        while (elements[step] != element && step < elements.length - 1) {
+            step++;
+        }
+        if (step == elements.length - 1) {
+            return -1;
+        }
+        if (step != elements.length) {
+            return ++step;
+        }
         return 0;
     }
 
     @Override
     public int lastIndexOf(int element) {
-        // TODO
-        return 0;
+        int lastIndex = -1;
+        int step = -1;
+        while (step < elements.length - 1) {
+            if (elements[++step] == element) {
+                lastIndex = step;
+            }
+        }
+
+        return lastIndex;
     }
 }
