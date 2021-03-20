@@ -81,8 +81,20 @@ public class LinkedList implements List {
     @Override
     public void removeAt(int index) {
         Node current = first;
+
+        if (current == null) {
+            System.out.println("List is Empty!");
+            return;
+        }
+
+        if (index + 1 > count) {
+            System.out.println("Wrong number of Index!");
+            return;
+        }
+
         int step = 0;
 
+        // для первого эелемента
         if (step == index) {
             current = current.next;
             first = current;
@@ -92,9 +104,12 @@ public class LinkedList implements List {
 
         while (step < index && step <= count) {
             step++;
-            if (step == 1) {
-                first.next = first.next.next;
+            // проверка равен ли шаг нужному индексу
+            if (step == index) {
+                // если да, то перекинем через элемент
+                current.next = current.next.next;
             } else {
+                // если не равен, то текущий узел становится следующим
                 current = current.next;
             }
         }
@@ -109,7 +124,12 @@ public class LinkedList implements List {
             current = current.next;
             step++;
         }
-        return step;
+
+        if (current.next == null && step == 0) {
+            return -1;
+        } else {
+            return step;
+        }
     }
 
     @Override
@@ -194,15 +214,22 @@ public class LinkedList implements List {
     @Override
     public void removeAll(int element) {
         Node current = first;
-        if (current.value == element) {
-            current = current.next;
-            first = current;
-        }
         while (current.next != null) {
-            if(current.next.value != element) {
+            if (current.value == element) {
                 current = current.next;
+                first = current;
+                count--;
             } else {
-                current.next = current.next.next;
+                current = current.next;
+                count--;
+            }
+
+            if (current.next == null && current.value == element) {
+                current = null;
+                first = null;
+                last = null;
+                count--;
+                return;
             }
         }
     }

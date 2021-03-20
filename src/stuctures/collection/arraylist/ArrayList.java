@@ -118,16 +118,14 @@ public class ArrayList implements List {
     @Override
     public int indexOf(int element) {
         int step = 0;
-        while (elements[step] != element && step < elements.length - 1) {
+        while (elements[step] != element && step < elements.length) {
             step++;
-        }
-        if (step == elements.length - 1) {
-            return -1;
         }
         if (step != elements.length) {
             return ++step;
         }
-        return 0;
+        return -1;
+
     }
 
     @Override
