@@ -213,24 +213,36 @@ public class LinkedList implements List {
 
     @Override
     public void removeAll(int element) {
+
         Node current = first;
-        while (current.next != null) {
-            if (current.value == element) {
+        Node prev = null;
+
+        // If head node itself holds the key
+        // or multiple occurrences of key
+        while (current.next != null && current.value == element) {
+            first = current.next;
+            current = first;
+        }
+
+        // Delete occurrences other than head
+        while (current != null) {
+            // Search for the key to be deleted,
+            // keep track of the previous node
+            // as we need to change 'prev->next'
+            while (current != null && current.value != element) {
+                prev = current;
                 current = current.next;
-                first = current;
-                count--;
-            } else {
-                current = current.next;
-                count--;
             }
 
-            if (current.next == null && current.value == element) {
-                current = null;
-                first = null;
-                last = null;
-                count--;
+            // If key was not present in linked list
+            if (current == null) {
                 return;
             }
+
+            // Unlink the node from linked list
+            prev.next = current.next;
+            // Update Temp for next iteration of outer loop
+            current = prev.next;
         }
     }
 
