@@ -1,0 +1,3 @@
+/home/uis/Documents
+
+/home/uis/Downloads

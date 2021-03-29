@@ -20,9 +20,9 @@ public class VideoGenerator {
         try {
             scannerName = new Scanner(namesOfVideo);
             while (scannerName.hasNext()) {
-                int likes = random.nextInt(100000);
-                int dislikes = random.nextInt(100000);
-                int length = random.nextInt(180);
+                int likes = Math.abs(random.nextInt(100000));
+                int dislikes = Math.abs(random.nextInt(100000));
+                int length = Math.abs(random.nextInt(180));
                 String name = scannerName.nextLine();
                 int index = Math.abs(random.nextInt(users.size()));
                 User author = users.get(index);

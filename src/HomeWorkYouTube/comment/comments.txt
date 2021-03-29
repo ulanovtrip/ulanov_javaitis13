@@ -1,46 +1,46 @@
 I've tried Gnome 40 myself and immediately fell in  love with  it
-
 Wow looks good.. I still remember the backlash that Gnome 3 got when it moved away from gtx2/gnome2 .. but this time around I think people are more accepting of Gnome 40.. yes its a big update but not as knee jerking as it was going from Gnome 2 to Gnome 3..
-
 I'm a KDE user and don't like GNOME, but damn, GNOME 40 looks really good.
-
 This will be monumental for the pinephone I think. Screw phosh, just make this scale down to a mobile form factor and map the gesture actions to touch and you have a fully realised mobile shell.
-
 Gnome 40 just feels complete. Very much impressed. Tho I use KDE, but also GNOME from time to time :D
-
 I already tested it a few weeks ago in GnomeOS, I like it but I thought from the start that it is kind of the same and not a complete change
-
 Wow, those 36 other versions passed so quickly!
-
 It feels like they designed the new GNOME with touchscreen in mind. I wish I had a tablet to test it on, it looks really appealing.
-
 I love how new gnome looks. I'm curious how canonical would implement it in the future ubuntu release.
-
-
 The push for 1:1 gestures for trackpads has me so excited!
-
 The hand gestures alone make me want to reinstall this on my laptop. I've been using Sway recently, and absolutely love that, but a DE just does certain things better
-
 Looks like a hybrid between Gnome 3 and Elementary OS , also this version looks like it's made for touch screens .
-
 Damn, missed versions 4-39.
-
 i am so excited for this to start coming to distributions. like to the point where i might install debian sid or fedora just to get it faster haha
-
 OMG, FINALLY, so much easier. I was waiting for this for a while now. Still not fully satisfied but hey we are going somewhere. This will make our custom setup much easier in the future. Also Gnome needs to work a bit on the battery usage for laptops.
-
 The trackpad gesture alone makes this version of GNOME looks neat.
-
 Sooo now it just looks like macOS? Absolutely love it though, I'm definitely gonna have to try it out
-
 Can't wait for this to come out on Ubuntu!
-
 At first I was very skeptical about the update, but now.... I'm soo excited!!
-
 The three-finger gestures are so good! I installed Fedora 34 yesterday and I'm already in love, the GNOME devs did an incredible job with this update.
-
 Thanks for the news, you've became my source of open source / Linux news, appreciate your content.
-
 Gnome 40 feels very professional, great down to the details!
-
+GOOD LORD, three finger swype to change workspaces is what I've been waiting for ever since I started using Fedora! LOVE IT
+I've tried Gnome 40 myself and immediately fell in  love with  it
+Wow looks good.. I still remember the backlash that Gnome 3 got when it moved away from gtx2/gnome2 .. but this time around I think people are more accepting of Gnome 40.. yes its a big update but not as knee jerking as it was going from Gnome 2 to Gnome 3..
+I'm a KDE user and don't like GNOME, but damn, GNOME 40 looks really good.
+This will be monumental for the pinephone I think. Screw phosh, just make this scale down to a mobile form factor and map the gesture actions to touch and you have a fully realised mobile shell.
+Gnome 40 just feels complete. Very much impressed. Tho I use KDE, but also GNOME from time to time :D
+I already tested it a few weeks ago in GnomeOS, I like it but I thought from the start that it is kind of the same and not a complete change
+Wow, those 36 other versions passed so quickly!
+It feels like they designed the new GNOME with touchscreen in mind. I wish I had a tablet to test it on, it looks really appealing.
+I love how new gnome looks. I'm curious how canonical would implement it in the future ubuntu release.
+The push for 1:1 gestures for trackpads has me so excited!
+The hand gestures alone make me want to reinstall this on my laptop. I've been using Sway recently, and absolutely love that, but a DE just does certain things better
+Looks like a hybrid between Gnome 3 and Elementary OS , also this version looks like it's made for touch screens .
+Damn, missed versions 4-39.
+i am so excited for this to start coming to distributions. like to the point where i might install debian sid or fedora just to get it faster haha
+OMG, FINALLY, so much easier. I was waiting for this for a while now. Still not fully satisfied but hey we are going somewhere. This will make our custom setup much easier in the future. Also Gnome needs to work a bit on the battery usage for laptops.
+The trackpad gesture alone makes this version of GNOME looks neat.
+Sooo now it just looks like macOS? Absolutely love it though, I'm definitely gonna have to try it out
+Can't wait for this to come out on Ubuntu!
+At first I was very skeptical about the update, but now.... I'm soo excited!!
+The three-finger gestures are so good! I installed Fedora 34 yesterday and I'm already in love, the GNOME devs did an incredible job with this update.
+Thanks for the news, you've became my source of open source / Linux news, appreciate your content.
+Gnome 40 feels very professional, great down to the details!
 GOOD LORD, three finger swype to change workspaces is what I've been waiting for ever since I started using Fedora! LOVE IT
