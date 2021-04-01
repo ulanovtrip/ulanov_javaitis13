@@ -38,17 +38,19 @@ public class ClientTest {
 
         // Статистика
         Statistics statistics = new Statistics();
+
+        // Отсортированы видео по лайкам и дислайкам
         List<Video> sortedVideos = statistics.showBestRatingVideo(videoList);
         print(sortedVideos);
-
         System.out.println("----------------------------------------------------");
 
+        // Юзеры в порядке убывания по заработанным деньгам
         List<User> mostReachUsers = statistics.showReachUsers(users);
         print(mostReachUsers);
-
         System.out.println("----------------------------------------------------");
 
-        List<User> reachUsers = statistics.showMostDislikeComments(mostReachUsers);
+        // Самые задислайканные комментарии
+        List<Comment> reachUsers = statistics.showMostDislikeComments(mostReachUsers);
         print(reachUsers);
 
         System.out.println("----------------------------------------------------");

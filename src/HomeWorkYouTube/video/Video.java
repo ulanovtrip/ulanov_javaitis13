@@ -23,28 +23,8 @@ public class Video implements Comparable<Video> {
         this.author = author;
     }
 
-    public String getName() {
-        return name;
-    }
-
-    public int getLikes() {
-        return likes;
-    }
-
-    public int getDislikes() {
-        return dislikes;
-    }
-
-    public List<Comment> getCommentList() {
-        return commentList;
-    }
-
     public int getLength() {
         return length;
-    }
-
-    public User getAuthor() {
-        return author;
     }
 
     public void setCommentList(List<Comment> commentList) {

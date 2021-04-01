@@ -14,20 +14,4 @@ public class Comment {
         this.dislikes = dislikes;
         this.author = author;
     }
-
-    public String getText() {
-        return text;
-    }
-
-    public int getLikes() {
-        return likes;
-    }
-
-    public int getDislikes() {
-        return dislikes;
-    }
-
-    public User getAuthor() {
-        return author;
-    }
 }

@@ -10,33 +10,13 @@ public class User implements Comparable<User> {
     private List<Video> videoList;
     private String firstName;
     private String lastName;
-    private int countOfMoney;
+    private Integer countOfMoney;
     List<Comment> comments;
 
-    public User(String firstName, String lastName, int countOfMoney) {
+    public User(String firstName, String lastName, Integer countOfMoney) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.countOfMoney = countOfMoney;
-    }
-
-    public List<Video> getVideoList() {
-        return videoList;
-    }
-
-    public String getFirstName() {
-        return firstName;
-    }
-
-    public String getLastName() {
-        return lastName;
-    }
-
-    public int getCountOfMoney() {
-        return countOfMoney;
-    }
-
-    public List<Comment> getComments() {
-        return comments;
     }
 
     public void setVideoList(List<Video> videoList) {
@@ -52,12 +32,19 @@ public class User implements Comparable<User> {
         return new StringJoiner(", ", User.class.getSimpleName() + "[", "]")
                 .add("firstName='" + firstName + "'")
                 .add("lastName='" + lastName + "'")
+                .add("Money=" + countOfMoney + "'")
                 .toString();
     }
 
     @Override
     public int compareTo(User o) {
-        // TODO
-        return 0;
+
+        int result = this.countOfMoney.compareTo(o.countOfMoney);
+
+        if (result != 0) {
+            return result;
+        } else {
+            return 0;
+        }
     }
 }

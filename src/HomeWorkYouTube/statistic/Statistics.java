@@ -1,8 +1,10 @@
 package HomeWorkYouTube.statistic;
 
+import HomeWorkYouTube.comment.Comment;
 import HomeWorkYouTube.user.User;
 import HomeWorkYouTube.video.Video;
 
+import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
@@ -14,12 +16,16 @@ public class Statistics {
     }
 
     public List<User> showReachUsers(List<User> mostReachUsers) {
-        Collections.sort(mostReachUsers, Collections.reverseOrder());
+        Collections.sort(mostReachUsers);
         return mostReachUsers;
     }
 
-    public List<User> showMostDislikeComments(List<User> mostReachUsers) {
+    public List<Comment> showMostDislikeComments(List<User> mostReachUsers) {
+
+        List<Comment> dislikedComments = new ArrayList<>();
+
         Collections.sort(mostReachUsers, Collections.reverseOrder());
-        return mostReachUsers;
+
+        return dislikedComments;
     }
 }
