@@ -19,6 +19,10 @@ public class User implements Comparable<User> {
         this.countOfMoney = countOfMoney;
     }
 
+    public List<Comment> getComments() {
+        return comments;
+    }
+
     public void setVideoList(List<Video> videoList) {
         this.videoList = videoList;
     }

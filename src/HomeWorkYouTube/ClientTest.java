@@ -50,8 +50,8 @@ public class ClientTest {
         System.out.println("----------------------------------------------------");
 
         // Самые задислайканные комментарии
-        List<Comment> reachUsers = statistics.showMostDislikeComments(mostReachUsers);
-        print(reachUsers);
+        List<Comment> mostDislikeComments = statistics.showMostDislikeComments(mostReachUsers);
+        print(mostDislikeComments);
 
         System.out.println("----------------------------------------------------");
 

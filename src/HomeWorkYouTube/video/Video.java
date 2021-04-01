@@ -39,8 +39,10 @@ public class Video implements Comparable<Video> {
             return result;
         }
 
+        // если лайки равны, то сравним по дислайкам.
         int dislikesCompareResult = this.dislikes.compareTo(o.dislikes);
 
+        // чтобы показать, что много лайков это плохо, надо инвертировать
         switch (dislikesCompareResult) {
             case -1:
                 return 1;

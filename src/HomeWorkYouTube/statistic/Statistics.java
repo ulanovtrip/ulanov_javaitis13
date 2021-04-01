@@ -24,7 +24,23 @@ public class Statistics {
 
         List<Comment> dislikedComments = new ArrayList<>();
 
-        Collections.sort(mostReachUsers, Collections.reverseOrder());
+        for (int i = 0; i < 10; i++) {
+
+            User user = mostReachUsers.get(i);
+            List<Comment> currentUserComments = user.getComments();
+
+            int maxDislikes = 0;
+            Comment dislikedComment = null;
+            for (Comment comment : currentUserComments) {
+                if (comment.getDislikes() > maxDislikes) {
+                    maxDislikes = comment.getDislikes();
+                    dislikedComment = comment;
+                }
+            }
+            dislikedComments.add(dislikedComment);
+        }
+
+        Collections.sort(dislikedComments, Collections.reverseOrder());
 
         return dislikedComments;
     }
