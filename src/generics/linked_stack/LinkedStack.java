@@ -3,6 +3,7 @@ package generics.linked_stack;
 public class LinkedStack<T> {
 
     private static class Node<U> {
+
         U item;
         Node<U> next;
 
