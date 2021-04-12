@@ -1,0 +1,4 @@
+Now dir1 and dir2 currently don't exist. I want Java to create them automatically if they aren't already there.
+Actually Java should set up the whole file path if not already existing.
+
+How can I achieve this?

@@ -18,9 +18,11 @@ public class HashMap<K, V> implements Map<K, V> {
         }
     }
 
+    // массив узлов для хранения
     private EntryNode<K, V>[] table;
 
     HashMap() {
+        // при создании объекта мапы размер будет 10
         table = new EntryNode[DEFAULT_SIZE];
     }
 
@@ -28,18 +30,21 @@ public class HashMap<K, V> implements Map<K, V> {
     public void put(K key, V value) {
         // получаем hash-code ключа, обрезаем его до размеров массива, получаем индекс
         int index = Math.abs(key.hashCode() % DEFAULT_SIZE);
-        // под этим индексом кладем его в миссив
+        // под этим индексом кладем его в массив
         // если в данном bucket-e ничего нет
         if (table[index] == null) {
-            // кладём туда узел, он будет первым
-            table[index] = new EntryNode<>(key, value);
+            // создадим новый объект узла с текущими данными
+            EntryNode<K, V> newNode = new EntryNode<>(key, value);
+            // и положим узел в массив table, он будет первым
+            table[index] = newNode;
         } else {
             // если не пустой, то нужно пройтись по всему bucket-у и найти ключ
-            EntryNode<K, V> current = table[index]; // запоминаем первый элемент bucket-a
-            // идём по всему текущему списку
+            // для начала запоминаем первый элемент bucket-a
+            EntryNode<K, V> current = table[index];
+            // потом идём по всему текущему списку
             while (current != null) {
                 // чтобы не тратить на сравнение по equals, проверим hash-code, он быстрее
-                // ситуация - если hash-cod-ы равны, не файк, что там один и тот же ключ
+                // ситуация - если hash-cod-ы равны, не файкт, что там один и тот же ключ
                 // но если hash-cod-ы разные, то объекты точно разные
                 if (current.key.hashCode() != key.hashCode()) {
                     // переходим сразу к след. узлу

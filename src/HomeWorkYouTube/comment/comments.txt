@@ -5,7 +5,7 @@ This will be monumental for the pinephone I think. Screw phosh, just make this s
 Gnome 40 just feels complete. Very much impressed. Tho I use KDE, but also GNOME from time to time :D
 I already tested it a few weeks ago in GnomeOS, I like it but I thought from the start that it is kind of the same and not a complete change
 Wow, those 36 other versions passed so quickly!
-It feels like they designed the new GNOME with touchscreen in mind. I wish I had a tablet to test it on, it looks really appealing.
+It feels like they designed the new GNOME with touchscreen in mind. I wish I had a tablet to SimonRandomTasks it on, it looks really appealing.
 I love how new gnome looks. I'm curious how canonical would implement it in the future ubuntu release.
 The push for 1:1 gestures for trackpads has me so excited!
 The hand gestures alone make me want to reinstall this on my laptop. I've been using Sway recently, and absolutely love that, but a DE just does certain things better
@@ -28,7 +28,7 @@ This will be monumental for the pinephone I think. Screw phosh, just make this s
 Gnome 40 just feels complete. Very much impressed. Tho I use KDE, but also GNOME from time to time :D
 I already tested it a few weeks ago in GnomeOS, I like it but I thought from the start that it is kind of the same and not a complete change
 Wow, those 36 other versions passed so quickly!
-It feels like they designed the new GNOME with touchscreen in mind. I wish I had a tablet to test it on, it looks really appealing.
+It feels like they designed the new GNOME with touchscreen in mind. I wish I had a tablet to SimonRandomTasks it on, it looks really appealing.
 I love how new gnome looks. I'm curious how canonical would implement it in the future ubuntu release.
 The push for 1:1 gestures for trackpads has me so excited!
 The hand gestures alone make me want to reinstall this on my laptop. I've been using Sway recently, and absolutely love that, but a DE just does certain things better
