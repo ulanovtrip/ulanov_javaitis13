@@ -15,6 +15,8 @@ public class Game {
         this.id = id;
     }
 
+    public Game() { }
+
     public String getId() {
         return id;
     }

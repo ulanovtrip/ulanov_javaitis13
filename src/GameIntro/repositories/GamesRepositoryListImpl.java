@@ -1,6 +1,7 @@
 package GameIntro.repositories;
 
 import GameIntro.models.Game;
+import jdk.jshell.spi.ExecutionControl;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -27,5 +28,15 @@ public class GamesRepositoryListImpl implements GamesRepository {
             }
         }
         return null;
+    }
+
+    @Override
+    public void update(Game game) {
+        String message = "not impl";
+        try {
+            throw new ExecutionControl.NotImplementedException(message);
+        } catch (ExecutionControl.NotImplementedException e) {
+            e.printStackTrace();
+        }
     }
 }

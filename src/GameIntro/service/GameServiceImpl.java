@@ -58,9 +58,11 @@ public class GameServiceImpl implements GameService {
         int chance = random.nextInt(10);
 
         if (chance > 4) {
+
             // получаем двух игроков
             Player shooter = playersRepository.findOneByNickname(shooterNickname);
             Player target = playersRepository.findOneByNickname(targetNickname);
+
             // ищем в какой игре
             Game game = gamesRepository.findOneById(gameId);
 
@@ -85,6 +87,7 @@ public class GameServiceImpl implements GameService {
     public void finishGame(String gameId) {
         Game game = gamesRepository.findOneById(gameId);
         game.setFinishGameDateTime(LocalDateTime.now());
+        gamesRepository.update(game);
     }
 
     private Player getPlayer(String nickname) {

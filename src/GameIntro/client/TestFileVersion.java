@@ -6,11 +6,11 @@ import GameIntro.service.GameServiceImpl;
 
 import java.util.Scanner;
 
-public class Main {
+public class TestFileVersion {
     public static void main(String[] args) {
 
         ShotsRepository shotsRepository = new ShotsRepositoryListImpl();
-        GamesRepository gamesRepository = new GamesRepositoryListImpl();
+        GamesRepository gamesRepository = new GamesRepositoryFileBasedImpl("src/GameIntro/repositories/games.txt");
         PlayersRepository playersRepository = new PlayersRepositoryMapImpl();
 
         GameService gameService = new GameServiceImpl(playersRepository, gamesRepository, shotsRepository);
@@ -19,6 +19,7 @@ public class Main {
         // стартуют игры
         int i = 0;
         while (i < 3) {
+            System.out.println("Введите имена игроков: ");
             String firstName = scanner.nextLine();
             String secondName = scanner.nextLine();
             String gameId = gameService.startGame(firstName, secondName);
@@ -27,7 +28,7 @@ public class Main {
             String target = secondName;
 
             int j = 0;
-            while (j < 4) {
+            while (j < 2) {
                 System.out.println("Стреляйте " + shooter + " в " + target);
                 scanner.nextLine();
                 if (gameService.shot(gameId, shooter, target)) {
@@ -47,8 +48,5 @@ public class Main {
             gameService.finishGame(gameId);
             i++;
         }
-
-        System.out.println();
-
     }
 }
