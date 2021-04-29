@@ -1,0 +1,4 @@
+
+{
+java:S1210#"YOverride "equals(Object obj)" to comply with the contract of the "compareTo(T o)" method.(ÎïÈÔúÿÿÿÿ8±†ÖË‡/
+{	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(æ²”ıÿÿÿÿ8—í«€‡/

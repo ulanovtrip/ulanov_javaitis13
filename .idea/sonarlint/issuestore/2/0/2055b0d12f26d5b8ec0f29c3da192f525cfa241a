@@ -1,0 +1,8 @@
+
+{	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(á´ºùÿÿÿÿ8¯¡¹—‡/
+E
+java:S1068"(Remove this unused "text" private field.(š²ûÁ8Â¡ğäˆ/
+u
+java:S1210"YOverride "equals(Object obj)" to comply with the contract of the "compareTo(T o)" method.(¡ôº8˜¬çˆ/
+F
+java:S1068	")Remove this unused "likes" private field.(÷‰Ê8Â¡ğäˆ/

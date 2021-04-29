@@ -1,0 +1,10 @@
+
+S	java:S1061"9Replace this use of System.out or System.err by a logger.(Œ·‰ýÿÿÿÿÿ
+a
+java:S1301"KReplace this "switch" statement by "if" statements to increase readability.(ìè²ë
+N	java:S106 "9Replace this use of System.out or System.err by a logger.(®²§Þ
+7	java:S131""Add a default case to this switch.(ìè²ë
+?
+java:S1940")Use the opposite operator ("!=") instead.(ƒ‹¦¢
+D
+java:S1940.")Use the opposite operator ("!=") instead.(˜à‘Áøÿÿÿÿ

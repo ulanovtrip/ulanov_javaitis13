@@ -1,0 +1,4 @@
+
+S	java:S106"9Replace this use of System.out or System.err by a logger.(ÂüÂ“ùÿÿÿÿ
+A
+java:S1452"&Remove usage of generic wildcard type.(êÖÌ‡üÿÿÿÿ

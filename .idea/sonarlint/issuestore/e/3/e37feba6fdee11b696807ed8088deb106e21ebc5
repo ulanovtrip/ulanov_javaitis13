@@ -1,0 +1,18 @@
+
+F
+java:S1481"")Remove this unused "dogs" local variable.(Éœ8øÀ¤‡/
+J
+java:S1481"(Remove this unused "obj" local variable.(¡œ÷ûÿÿÿÿ8™ûğ£‡/
+U
+java:S1854""8Remove this useless assignment to local variable "dogs".(Éœ8øÀ¤‡/
+X	java:S125"<This block of commented-out lines of code should be removed.(èòÄæ8ÃÃó£‡/
+M
+java:S1481 "+Remove this unused "tigers" local variable.(ô²êèûÿÿÿÿ8ôÿß£‡/
+Y
+java:S1854"7Remove this useless assignment to local variable "obj".(¡œ÷ûÿÿÿÿ8™ûğ£‡/
+Y
+java:S1854#"<Remove this useless assignment to local variable "goodBoys".(ÀØõû8ôÿß£‡/
+J
+java:S1481#"-Remove this unused "goodBoys" local variable.(ÀØõû8ôÿß£‡/
+\
+java:S1854 ":Remove this useless assignment to local variable "tigers".(ô²êèûÿÿÿÿ8ôÿß£‡/

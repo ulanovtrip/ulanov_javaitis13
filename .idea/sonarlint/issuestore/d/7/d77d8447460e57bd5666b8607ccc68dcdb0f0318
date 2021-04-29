@@ -1,0 +1,9 @@
+
+I
+java:S1611*"3Remove the parentheses around the "value" parameter(‚Å÷
+N	java:S106F"9Replace this use of System.out or System.err by a logger.(„öŞœ
+N	java:S106!"9Replace this use of System.out or System.err by a logger.(Öİ£®
+I
+java:S1611<"3Remove the parentheses around the "value" parameter(ü´’»
+S	java:S1063"9Replace this use of System.out or System.err by a logger.(üØ±ıÿÿÿÿ
+N	java:S1065"9Replace this use of System.out or System.err by a logger.(ÇˆÆğ

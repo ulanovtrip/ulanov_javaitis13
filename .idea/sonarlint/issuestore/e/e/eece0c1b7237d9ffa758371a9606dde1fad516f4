@@ -1,0 +1,7 @@
+
+Z
+java:S1854"8Remove this useless assignment to local variable "data".(Šì÷öüÿÿÿÿ8¼¥šë/
+U	java:S106"9Replace this use of System.out or System.err by a logger.(šŞˆú8 ‹›ë/
+K
+java:S1481")Remove this unused "data" local variable.(Šì÷öüÿÿÿÿ8¼¥šë/
+U	java:S106"9Replace this use of System.out or System.err by a logger.(¦‹…8£š™ë/

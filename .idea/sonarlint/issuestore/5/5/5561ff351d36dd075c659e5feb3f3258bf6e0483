@@ -1,0 +1,14 @@
+
+H
+java:S1481&"+Remove this unused "wolves" local variable.(á²ú©8šÊÁ£‡/
+M
+java:S1481%"+Remove this unused "tigers" local variable.(ô²êèûÿÿÿÿ8Îæ»£‡/
+]	java:S125"<This block of commented-out lines of code should be removed.(áíÔóúÿÿÿÿ8Ô´È£‡/
+W
+java:S1854&":Remove this useless assignment to local variable "wolves".(á²ú©8šÊÁ£‡/
+\
+java:S1854%":Remove this useless assignment to local variable "tigers".(ô²êèûÿÿÿÿ8Îæ»£‡/
+N
+java:S1481$",Remove this unused "animals" local variable.(àíËÈÿÿÿÿÿ8…‚À£‡/
+]
+java:S1854$";Remove this useless assignment to local variable "animals".(àíËÈÿÿÿÿÿ8…‚À£‡/

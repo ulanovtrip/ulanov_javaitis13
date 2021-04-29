@@ -1,0 +1,8 @@
+
+U	java:S106L"9Replace this use of System.out or System.err by a logger.(ŠğşÅ8‹÷­ï/
+I
+java:S1612L",Replace this lambda with a method reference.(ŠğşÅ8‹÷­ï/
+N
+java:S1612E",Replace this lambda with a method reference.(ŠæÅÜıÿÿÿÿ8°ù ï/
+E
+java:S1604."(Make this anonymous inner class a lambda(ú˜ê8ƒ¨°ê/

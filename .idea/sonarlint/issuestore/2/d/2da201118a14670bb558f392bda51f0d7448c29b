@@ -1,0 +1,25 @@
+
+U	java:S106"9Replace this use of System.out or System.err by a logger.(£ºªĞ8ëÂ‡ş„/
+f
+java:S1192"IDefine a constant instead of duplicating this literal "Before: " 4 times.(£ºªĞ8Ê•ƒ…/
+Z	java:S106;"9Replace this use of System.out or System.err by a logger.(ªÓ¼áşÿÿÿÿ8Å£©ƒ…/
+U	java:S106"9Replace this use of System.out or System.err by a logger.(­Öõø8¸àÁÿ„/
+U	java:S106/"9Replace this use of System.out or System.err by a logger.(£ºªĞ8Å£©ƒ…/
+Z	java:S106 "9Replace this use of System.out or System.err by a logger.(Ïíõšûÿÿÿÿ8Ï†æ‚…/
+U	java:S106"9Replace this use of System.out or System.err by a logger.(§£´²8¶Æÿ„/
+e
+java:S1192"HDefine a constant instead of duplicating this literal "After: " 4 times.(™Ã™·8Ê•ƒ…/
+Z	java:S106"9Replace this use of System.out or System.err by a logger.(Ïíõšûÿÿÿÿ8¸Èÿ„/
+U	java:S106*"9Replace this use of System.out or System.err by a logger.(™Ã™·8Å£©ƒ…/
+U	java:S106#"9Replace this use of System.out or System.err by a logger.(™Ã™·8ö€ó‚…/
+Z	java:S106"9Replace this use of System.out or System.err by a logger.(‹Â”Îÿÿÿÿÿ8Û»Ãÿ„/
+U	java:S106!"9Replace this use of System.out or System.err by a logger.(£ºªĞ8°·ò‚…/
+U	java:S1061"9Replace this use of System.out or System.err by a logger.(™Ã™·8Å£©ƒ…/
+U	java:S106"9Replace this use of System.out or System.err by a logger.(™Ã™·8¯Ë†ş„/
+
+java:S1192"_Define a constant instead of duplicating this literal "------------------------------" 4 times.(Ïíõšûÿÿÿÿ8”ü•ƒ…/
+U	java:S106("9Replace this use of System.out or System.err by a logger.(£ºªĞ8Å£©ƒ…/
+Z	java:S106."9Replace this use of System.out or System.err by a logger.(Ïíõšûÿÿÿÿ8Ê•ƒ…/
+T	java:S1069"9Replace this use of System.out or System.err by a logger.(ç‰
+8Å£©ƒ…/
+Z	java:S106'"9Replace this use of System.out or System.err by a logger.(Ïíõšûÿÿÿÿ8”ü•ƒ…/

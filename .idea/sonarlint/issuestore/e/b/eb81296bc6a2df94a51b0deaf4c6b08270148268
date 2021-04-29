@@ -1,0 +1,16 @@
+
+S	java:S106,"9Replace this use of System.out or System.err by a logger.(¼şò¡úÿÿÿÿ
+N	java:S1068"9Replace this use of System.out or System.err by a logger.(â£±ƒ
+M	java:S106;"9Replace this use of System.out or System.err by a logger.(ÃÙ¦5
+¤
+java:S1192"Define a constant instead of duplicating this literal "----------------------------------------------------------------------------" 3 times.(ª¨ÅÕ
+N	java:S106"9Replace this use of System.out or System.err by a logger.(ª¨ÅÕ
+N	java:S106)"9Replace this use of System.out or System.err by a logger.(ª¨ÅÕ
+N	java:S106"9Replace this use of System.out or System.err by a logger.(ª¨ÅÕ
+S	java:S106"9Replace this use of System.out or System.err by a logger.(“½ éúÿÿÿÿ
+Q	java:S125C"<This block of commented-out lines of code should be removed.(¥°ë
+S	java:S106$"9Replace this use of System.out or System.err by a logger.(“½ éúÿÿÿÿ
+S	java:S106/"9Replace this use of System.out or System.err by a logger.(Ğ«–øÿÿÿÿ
+w
+java:S1488g"\Immediately return this expression instead of assigning it to the temporary variable "list".(İñØµÿÿÿÿÿ
+S	java:S106&"9Replace this use of System.out or System.err by a logger.(˜„”üÿÿÿÿ

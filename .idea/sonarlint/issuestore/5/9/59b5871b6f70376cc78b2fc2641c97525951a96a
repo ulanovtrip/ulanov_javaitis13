@@ -1,0 +1,10 @@
+
+v
+java:S1210,"YOverride "equals(Object obj)" to comply with the contract of the "compareTo(T o)" method.(„“éÒ8ªº»œá/
+v	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(”€€Ò8Ø°πóá/
+J
+java:S1068
+"-Remove this unused "videoList" private field.(ï—ß¡8±àÓ‰à/
+u
+java:S1450
+"XRemove the "videoList" field and declare it as a local variable in the relevant methods.(ï—ß¡8±àÓ‰à/

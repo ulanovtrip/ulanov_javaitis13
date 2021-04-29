@@ -1,0 +1,16 @@
+
+Y
+java:S1854"7Remove this useless assignment to local variable "exp".(ÈÇ¥øÿÿÿÿ8§¶œ·Œ/
+]
+java:S1854";Remove this useless assignment to local variable "builder".(³¿÷¿ıÿÿÿÿ8 £Æ¶Œ/
+B
+java:S3457#"%String contains no format specifiers.(ÁçÏÓ8©­“·Œ/
+B
+java:S3457%"%String contains no format specifiers.(‰ŒÙ8ğæ“·Œ/
+N
+java:S1481",Remove this unused "builder" local variable.(³¿÷¿ıÿÿÿÿ8 £Æ¶Œ/
+J
+java:S1481"(Remove this unused "exp" local variable.(ÈÇ¥øÿÿÿÿ8§¶œ·Œ/
+U	java:S106%"9Replace this use of System.out or System.err by a logger.(‰ŒÙ8ğæ“·Œ/
+v	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(µÉË8Â¶•¸Œ/
+U	java:S106#"9Replace this use of System.out or System.err by a logger.(ÁçÏÓ8©­“·Œ/

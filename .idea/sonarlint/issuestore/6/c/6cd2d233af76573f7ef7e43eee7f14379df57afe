@@ -1,0 +1,6 @@
+
+v	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(µÉË8×‡•¸Œ/
+g
+java:S2095"EUse try-with-resources or close this "Scanner" in a "finally" clause.(Èñ¾„ıÿÿÿÿ8ÀÔµ·Œ/
+e
+java:S2095"HUse try-with-resources or close this "FileWriter" in a "finally" clause.(Ô¥–8œ‘Á·Œ/
