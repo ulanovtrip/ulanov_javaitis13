@@ -1,14 +1,0 @@
-
-Z	java:S106!"9Replace this use of System.out or System.err by a logger.(Ê©½—úÿÿÿÿ8á¼Æ/
-U	java:S106"9Replace this use of System.out or System.err by a logger.(†çí•8øà©Æ/
-U	java:S106"9Replace this use of System.out or System.err by a logger.(‰âíİ8‘”½Æ/
-j
-java:S2095"MUse try-with-resources or close this "FileInputStream" in a "finally" clause.(àš±8á¼Æ/
-t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ŒÂâğûÿÿÿÿ
-Z	java:S106$"9Replace this use of System.out or System.err by a logger.(Ê©½—úÿÿÿÿ8âŒ¾Æ/
-Z	java:S106"9Replace this use of System.out or System.err by a logger.(Ÿøìıÿÿÿÿ8‚ü«Æ/
-Z	java:S106"9Replace this use of System.out or System.err by a logger.(Ê©½—úÿÿÿÿ8á¼Æ/
-]
-java:S1854"@Remove this useless assignment to local variable "byteFromFile".(‘úØ©8Ã‚­Æ/
-o
-java:S2095"MUse try-with-resources or close this "FileInputStream" in a "finally" clause.(Ğ‘Ï¢ùÿÿÿÿ8ãş”Æ/

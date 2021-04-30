@@ -1,4 +1,0 @@
-
-t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(É¼Ú°ùÿÿÿÿ
-p
-java:S2095	"NUse try-with-resources or close this "FileOutputStream" in a "finally" clause.(Şëç×ùÿÿÿÿ8ù¤¶È/
