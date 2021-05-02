@@ -1,0 +1,7 @@
+printer.impl=reflection.framework.PrinterSimpleImpl
+
+printer.component.name=Printer
+
+terminal.impl=reflection.framework.Terminal
+
+terminal.component.name=Terminal

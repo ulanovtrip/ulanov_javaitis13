@@ -259,10 +259,6 @@ _
 /src/multithreading/itis/test/ThreadService.java,9/7/9763c73c5618680e822f9a6f80d0d2616802cced
 Z
 *src/multithreading/itis/runnable/Trex.java,0/0/00e7bf9c73b2da48e06b1925c6e88441d90ff95c
-U
-%src/archives/jar/app/ProgramInfo.java,9/2/923db504f9a0b5be1c7e6bc68a6b4db27273f1d8
-[
-+src/archives/jar/utils/FileInformation.java,8/f/8f843cbc34a4f5cdc42057b9a25d3d3264e2949e
 b
 2src/exceptions/examples2/TestMainArithmeticEx.java,1/f/1f953ee4926fb7976b65426351e3ccf30abf6f7a
 V
@@ -437,3 +433,11 @@ R
 "src/java_io/reader/TestReader.java,3/e/3ee7c6d0424437eb710b925d25200ac6fcd7b4e0
 R
 "src/java_io/writer/TestWriter.java,f/0/f0be977f9ad769a09d0ce78949271a1812b4ee95
+a
+1src/jdbc/dao/repositories/AccountsRepository.java,c/9/c97e55e66d6aefa34112de1cc1965257766160d7
+E
+ulanov_javaitis13.iml,b/f/bfe0ddc0f04675a63fc815976b4f90c03cb3b96f
+F
+src/jdbc/TestJdbc.java,a/2/a20cb5c36e4cbc6413223559481a87a96f3b7440
+P
+ src/jdbc/dao/models/Account.java,2/a/2a93361d2a88459c23f99b96eb39acfabbea38cb

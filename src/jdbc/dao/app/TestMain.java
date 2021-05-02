@@ -1,5 +1,6 @@
 package jdbc.dao.app;
 
+import jdbc.dao.models.Account;
 import jdbc.dao.repositories.AccountsRepositoryJdbcImpl;
 
 import java.sql.Connection;
@@ -25,7 +26,28 @@ public class TestMain {
             throw new IllegalArgumentException(e);
         }
 
+        // сей объект нужен для работы с БД, это есть DAO, там реализация методов CRUD
         AccountsRepositoryJdbcImpl repositoryJdbc = new AccountsRepositoryJdbcImpl(connection);
+
+        System.out.println("-----------------------------------------------------------------------------------------");
+        // проверка работы метода findAll
         System.out.println(repositoryJdbc.findAll());
+        System.out.println("-----------------------------------------------------------------------------------------");
+        // провека работы findById()
+        System.out.println("ID 1L is: " + repositoryJdbc.findById(1L));
+        System.out.println("-----------------------------------------------------------------------------------------");
+        // проверка работы save()
+        // Account ivan = new Account("Ivan", "Ulanov", true);
+        //repositoryJdbc.save(ivan);
+        System.out.println(repositoryJdbc.findById(9L));
+        System.out.println("-----------------------------------------------------------------------------------------");
+        // проверим работу update()
+        //Account account = new Account(9L, "Baklan", "Morskoy", true);
+        //repositoryJdbc.update(account);
+        // или так
+        Account isak = repositoryJdbc.findById(2L);
+        isak.setLastName("Clark");
+        repositoryJdbc.save(isak);
+
     }
 }
