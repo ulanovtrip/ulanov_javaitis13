@@ -1,0 +1,2 @@
+Сгенерировать форму form.html
+на основе класса annotations.User
