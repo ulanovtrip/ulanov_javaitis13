@@ -34,7 +34,7 @@ public class GamesRepositoryListImpl implements GamesRepository {
     public void update(Game game) {
         String message = "not impl";
         try {
-            throw new ExecutionControl.NotImplementedException(message);
+                throw new ExecutionControl.NotImplementedException(message);
         } catch (ExecutionControl.NotImplementedException e) {
             e.printStackTrace();
         }
