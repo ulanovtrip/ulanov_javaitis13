@@ -1,6 +1,6 @@
-package HomeWorkYouTube.video;
+package YouTube.video;
 
-import HomeWorkYouTube.user.User;
+import YouTube.user.User;
 
 import java.io.File;
 import java.io.IOException;

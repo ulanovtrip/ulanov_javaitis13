@@ -1,7 +1,7 @@
-package HomeWorkYouTube.video;
+package YouTube.video;
 
-import HomeWorkYouTube.comment.Comment;
-import HomeWorkYouTube.user.User;
+import YouTube.comment.Comment;
+import YouTube.user.User;
 
 import java.util.List;
 import java.util.StringJoiner;

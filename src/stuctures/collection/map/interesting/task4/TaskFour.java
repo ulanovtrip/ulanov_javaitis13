@@ -9,5 +9,6 @@ package stuctures.collection.map.interesting.task4;
 public class TaskFour {
     public static void main(String[] args) {
         // TODO
+
     }
 }

@@ -1,8 +1,8 @@
-package HomeWorkYouTube.statistic;
+package YouTube.statistic;
 
-import HomeWorkYouTube.comment.Comment;
-import HomeWorkYouTube.user.User;
-import HomeWorkYouTube.video.Video;
+import YouTube.comment.Comment;
+import YouTube.user.User;
+import YouTube.video.Video;
 
 import java.util.ArrayList;
 import java.util.Collections;

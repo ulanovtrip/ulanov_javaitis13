@@ -1,6 +1,6 @@
-package HomeWorkYouTube.comment;
+package YouTube.comment;
 
-import HomeWorkYouTube.user.User;
+import YouTube.user.User;
 
 import java.util.StringJoiner;
 

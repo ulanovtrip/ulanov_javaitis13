@@ -1,14 +1,14 @@
-package HomeWorkYouTube;
+package YouTube;
 
-import HomeWorkYouTube.comment.Comment;
-import HomeWorkYouTube.comment.CommentGenerator;
-import HomeWorkYouTube.matchers.UserCommentsAndVideos;
-import HomeWorkYouTube.matchers.VideoAndComments;
-import HomeWorkYouTube.statistic.Statistics;
-import HomeWorkYouTube.user.User;
-import HomeWorkYouTube.user.UserGenerator;
-import HomeWorkYouTube.video.Video;
-import HomeWorkYouTube.video.VideoGenerator;
+import YouTube.comment.Comment;
+import YouTube.comment.CommentGenerator;
+import YouTube.matchers.UserCommentsAndVideos;
+import YouTube.matchers.VideoAndComments;
+import YouTube.statistic.Statistics;
+import YouTube.user.User;
+import YouTube.user.UserGenerator;
+import YouTube.video.Video;
+import YouTube.video.VideoGenerator;
 
 import java.util.List;
 

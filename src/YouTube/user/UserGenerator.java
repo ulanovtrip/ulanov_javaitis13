@@ -1,6 +1,4 @@
-package HomeWorkYouTube.user;
-
-import HomeWorkYouTube.comment.Comment;
+package YouTube.user;
 
 import java.io.File;
 import java.io.IOException;

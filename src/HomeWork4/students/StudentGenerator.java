@@ -1,7 +1,6 @@
 package HomeWork4.students;
 
 
-
 import HomeWork4.courses.Course;
 import HomeWork4.courses.CourseScore;
 import HomeWork4.courses.CourseScoreGenerate;
@@ -9,6 +8,7 @@ import HomeWork4.courses.CourseScoreGenerate;
 import java.util.Random;
 
 public class StudentGenerator {
+
     public static String[] names = {
             "Никита Матвеев",
             "Евгений Степанов",
@@ -99,7 +99,6 @@ public class StudentGenerator {
         }
         return students;
     }
-
 
     public Student getStudent(CourseScore[] courseScores, Course[] courses) {
         return new Student(

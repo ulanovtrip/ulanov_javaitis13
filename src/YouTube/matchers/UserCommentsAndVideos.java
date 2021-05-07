@@ -1,8 +1,8 @@
-package HomeWorkYouTube.matchers;
+package YouTube.matchers;
 
-import HomeWorkYouTube.comment.Comment;
-import HomeWorkYouTube.user.User;
-import HomeWorkYouTube.video.Video;
+import YouTube.comment.Comment;
+import YouTube.user.User;
+import YouTube.video.Video;
 
 import java.security.SecureRandom;
 import java.util.ArrayList;
