@@ -1,7 +1,5 @@
 package patterns.observer;
 
-import javax.sound.midi.Soundbank;
-
 // конкретный Observable, т.е. конкретный наблюдаемый объект
 public class TextProcessorImpl implements TextProcessor {
 
@@ -20,9 +18,9 @@ public class TextProcessorImpl implements TextProcessor {
     @Override
     public void addDocument(String document) {
         // вывод инфо, что документ получен
-            System.out.println("Получен документ : " + document);
-            // оповестить обработчика(observer), что появился новый документ.
-            notifyObserver(document);
+        System.out.println("Получен документ : " + document);
+        // оповестить обработчика(observer), что появился новый документ.
+        notifyObserver(document);
     }
 
     @Override
