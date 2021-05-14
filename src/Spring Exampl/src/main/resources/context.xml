@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="service" class="services.PrintMessagesServiceImpl">
+        <!--здесь нужно описать конструктор, это инъекция с помощью конструктора-->
+        <constructor-arg name="messageProcessor" ref="processor"/> <!--второй параметр-->
+        <property name="printer" ref="printer"/>
+    </bean>
+
+    <bean id="printer" class="printers.PrinterErrorImpl">
+        <!--инъкция с помощью сеттера-->
+        <property name="prefix" value="This is a Text: "/>
+    </bean>
+
+    <!--    <bean id="processor" class="messages.MessageProcessorTimeImpl"/>-->
+
+    <bean id="processor" class="messages.MessageProcessorReplacerImpl">
+        <!--удалит слово из value-->
+        <constructor-arg name="toReplace" value="lovely"/>
+    </bean>
+
+</beans>

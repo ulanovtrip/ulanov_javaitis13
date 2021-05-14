@@ -7,11 +7,15 @@ public class PrintMessagesServiceImpl implements PrintMessagesService {
 
     // зависимости
     private MessageProcessor messageProcessor;
+
+    public void setPrinter(Printer printer) {
+        this.printer = printer;
+    }
+
     private Printer printer;
 
-    public PrintMessagesServiceImpl(MessageProcessor messageProcessor, Printer printer) {
+    public PrintMessagesServiceImpl(MessageProcessor messageProcessor) {
         this.messageProcessor = messageProcessor;
-        this.printer = printer;
     }
 
     @Override
