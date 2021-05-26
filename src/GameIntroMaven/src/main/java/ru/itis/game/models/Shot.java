@@ -11,9 +11,7 @@ import lombok.NoArgsConstructor;
 @Builder
 public class Shot {
     private Long id;
-    // кто стрелял
     private Player shooter;
-    // в кого стрелял
     private Player target;
     private Game game;
 }

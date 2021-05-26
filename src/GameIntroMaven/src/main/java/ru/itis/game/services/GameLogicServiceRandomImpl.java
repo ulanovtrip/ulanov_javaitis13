@@ -2,15 +2,22 @@ package ru.itis.game.services;
 
 import org.springframework.stereotype.Component;
 
-import java.security.SecureRandom;
+import java.util.Random;
 
-@Component
+/**
+ * 14.05.2021
+ * GameIntroMaven
+ *
+ * @author Sidikov Marsel (First Software Engineering Platform)
+ * @version v1.0
+ */
+@Component(value = "simpleLogic")
 public class GameLogicServiceRandomImpl implements GameLogicService {
 
-    private SecureRandom random;
+    private Random random;
 
     public GameLogicServiceRandomImpl() {
-        this.random = new SecureRandom();
+        this.random = new Random();
     }
 
     @Override

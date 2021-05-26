@@ -1,4 +1,4 @@
-package ru.itis.game.models;
+package ru.itis.game.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -6,14 +6,10 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 @Data
-@AllArgsConstructor
 @NoArgsConstructor
+@AllArgsConstructor
 @Builder
-public class Player {
-    private Long id;
+public class UsernamePasswordDto {
     private String nickname;
     private String password;
-    private Integer score;
-    private Integer winsCount;
-    private Integer losesCount;
 }

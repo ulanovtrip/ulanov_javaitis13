@@ -1,21 +1,16 @@
 package ru.itis.game.services;
 
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
-import ru.itis.game.models.Game;
-import ru.itis.game.models.Player;
-import ru.itis.game.models.Shot;
-import ru.itis.game.repositories.GamesRepository;
-import ru.itis.game.repositories.PlayersRepository;
-import ru.itis.game.repositories.ShotsRepository;
+import ru.itis.game.dto.MessageDto;
+import ru.itis.game.dto.UsernamePasswordDto;
+import ru.itis.game.models.*;
+import ru.itis.game.repositories.*;
 
 import java.time.LocalDateTime;
 import java.util.Optional;
 
-// слой сервиса отвечает за бизнес-логику
-
-@Component
+@Component(value = "gameService")
 public class GameServiceImpl implements GameService {
 
     @Autowired
@@ -26,6 +21,48 @@ public class GameServiceImpl implements GameService {
     private ShotsRepository shotsRepository;
     @Autowired
     private GameLogicService gameLogicService;
+    @Autowired
+    private MessagesRepository messagesRepository;
+    @Autowired
+    private ClientsRepository clientsRepository;
+
+    @Override
+    public void connect(String ip) {
+        Client client = Client.builder()
+                .dateTime(LocalDateTime.now())
+                .ip(ip)
+                .build();
+        clientsRepository.save(client);
+    }
+
+    @Override
+    public void saveMessage(MessageDto message) {
+        Message model = Message.builder()
+                .dateTime(message.getDispatchDateTime())
+                .tags(message.getTags())
+                .text(message.getText())
+                .build();
+
+        messagesRepository.save(model);
+    }
+
+    @Override
+    public boolean authenticate(UsernamePasswordDto usernamePasswordDto) {
+        // нашли нужного пользователя
+        Optional<Player> playerOptional = playersRepository.findOneByNickname(usernamePasswordDto.getNickname());
+        // если пользователь есть
+        if (playerOptional.isPresent()) {
+            // достанем его
+            Player player = playerOptional.get();
+            // если пароли совпали, то true
+            if (player.getPassword().equals(usernamePasswordDto.getPassword())) {
+                return true;
+            }
+        } else {
+            return false;
+        }
+        return false;
+    }
 
     @Override
     public Long startGame(String firstPlayer, String secondPlayer) {
@@ -33,44 +70,30 @@ public class GameServiceImpl implements GameService {
         Player first = getPlayer(firstPlayer);
         Player second = getPlayer(secondPlayer);
 
-        // сохраним игроков
-        playersRepository.save(first);
-        playersRepository.save(second);
-
-        // создали игру
         Game game = Game.builder()
                 .firstPlayer(first)
                 .secondPlayer(second)
-                .shotCount(0)
+                .shotsCount(0)
                 .startGameDateTime(LocalDateTime.now())
                 .build();
 
-        // сохраним игру
         gamesRepository.save(game);
-
-        //тут вернём id игры
         return game.getId();
     }
 
     @Override
     public boolean shot(Long gameId, String shooterNickname, String targetNickname) {
-
-        // получаем двух игроков
         Optional<Player> shooterOptional = playersRepository.findOneByNickname(shooterNickname);
         Optional<Player> targetOptional = playersRepository.findOneByNickname(targetNickname);
 
+        if (shooterOptional.isPresent() && targetOptional.isPresent() &&
+                gameLogicService.isHitTarget(shooterOptional.get().getId(), targetOptional.get().getId())) {
 
-        if (shooterOptional.isPresent()
-                && targetOptional.isPresent()
-                && gameLogicService.isHitTarget(shooterOptional.get().getId(), targetOptional.get().getId())) {
-
-            // ищем в какой игре
             Optional<Game> gameOptional = gamesRepository.findById(gameId);
 
             if (gameOptional.isPresent()) {
-
                 Player shooter = shooterOptional.get();
-                Player target = shooterOptional.get();
+                Player target = targetOptional.get();
                 Game game = gameOptional.get();
 
                 Shot shot = Shot.builder()
@@ -78,10 +101,7 @@ public class GameServiceImpl implements GameService {
                         .target(target)
                         .game(game)
                         .build();
-
                 shotsRepository.save(shot);
-
-                // добавляем к текущему значению очков еще одно, если есть попадание
                 shooter.setScore(shooter.getScore() + 1);
                 playersRepository.update(shooter);
             }
@@ -89,7 +109,6 @@ public class GameServiceImpl implements GameService {
         }
         return false;
     }
-
 
     @Override
     public void finishGame(Long gameId) {
@@ -105,19 +124,17 @@ public class GameServiceImpl implements GameService {
     }
 
     private Player getPlayer(String nickname) {
+        Optional<Player> playerOptional = playersRepository.findOneByNickname(nickname);
 
-        Optional<Player> optionalPlayer = playersRepository.findOneByNickname(nickname);
-
-        if (optionalPlayer.isPresent()) {
-            return optionalPlayer.get();
+        if (playerOptional.isPresent()) {
+            return playerOptional.get();
         } else {
-            // если в репозитории нет, то создаём нового
             Player player = Player.builder()
                     .nickname(nickname)
                     .build();
-            // и сохраняем
             playersRepository.save(player);
             return player;
         }
+
     }
 }

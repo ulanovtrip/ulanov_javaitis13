@@ -9,14 +9,21 @@ import javax.sql.DataSource;
 import java.util.List;
 import java.util.Optional;
 
-@Component
+/**
+ * 14.05.2021
+ * GameIntroMaven
+ *
+ * @author Sidikov Marsel (First Software Engineering Platform)
+ * @version v1.0
+ */
+@Component(value = "shotsRepository")
 public class ShotsRepositoryJdbcTemplateImpl implements ShotsRepository {
 
     private JdbcTemplate jdbcTemplate;
 
     @Autowired
-    public ShotsRepositoryJdbcTemplateImpl(DataSource dataSource) {
-        this.jdbcTemplate = new JdbcTemplate(dataSource);
+    public ShotsRepositoryJdbcTemplateImpl(JdbcTemplate jdbcTemplate) {
+        this.jdbcTemplate = jdbcTemplate;
     }
 
     @Override

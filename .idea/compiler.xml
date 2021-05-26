@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <option name="BUILD_PROCESS_ADDITIONAL_VM_OPTIONS" value="-Djps.track.ap.dependencies=false" />
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true">
+        <processorPath useClasspath="false" />
+      </profile>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="Budget" />
+        <module name="source" />
+        <module name="GameIntroMaven" />
+        <module name="Sockets" />
+        <module name="JdbcTemplateExample" />
+        <module name="Spring Exampl" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="Budget" target="1.8" />
+      <module name="GameIntroMaven" target="8" />
+      <module name="JdbcTemplateExample" target="1.8" />
+      <module name="Sockets" target="8" />
+      <module name="source" target="8" />
+      <module name="Spring Exampl" target="15" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

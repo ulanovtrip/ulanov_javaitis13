@@ -7,15 +7,19 @@ import lombok.NoArgsConstructor;
 
 import java.time.LocalDateTime;
 
+/**
+ * 19.05.2021
+ * GameIntroMaven
+ *
+ * @author Sidikov Marsel (First Software Engineering Platform)
+ * @version v1.0
+ */
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
-public class Game {
+public class Client {
     private Long id;
-    private LocalDateTime startGameDateTime;
-    private LocalDateTime finishGameDateTime;
-    private Player firstPlayer;
-    private Player secondPlayer;
-    private Integer shotsCount;
+    private String ip;
+    private LocalDateTime dateTime;
 }
