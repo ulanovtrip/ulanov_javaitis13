@@ -19,12 +19,13 @@ public class MainClient {
         // установим никнейм через сеттер
         gameClient.setFrom(nickName);
 
-        // отправляем аутентификацию на сервер
+        // отправляем аутентификацию на сервер, т.е. отправляем логин/пароль на проверку
         gameClient.sendAuthentication(nickName, password);
 
+        // пока соединение есть
         // чтобы закрыть соединение, нужно вводить ещё одно сообщение вконце ввода
         while (!gameClient.isClosed()) {
-            // считываем текст сообщения для сервера
+            // считываем текст сообщения из консоли клиента
             String messageToServer = scanner.nextLine();
             // отправляем на сервер
             gameClient.sendMessageToServer(messageToServer);
