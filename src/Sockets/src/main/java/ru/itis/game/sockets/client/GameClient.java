@@ -31,6 +31,7 @@ public class GameClient {
             this.client = new Socket(host, port);
             // открываем потоки байтов для взаимодействия, т.е. чтения и записи информации
             this.toServer = new PrintWriter(new OutputStreamWriter(client.getOutputStream()), true);
+            // принимаем поток от сервера и ковертирует байты в символы
             this.fromServer = new BufferedReader(new InputStreamReader(client.getInputStream()));
 
         } catch (IOException e) {
@@ -64,10 +65,13 @@ public class GameClient {
         }
     }
 
-    public void sendAuthentication(String nickname, String password) {
+    // обработка либо авторизации, либо аутентификации
+    public void sendAuthentication(String nickname, String password, String type) {
+        // собираем объект
         UsernamePasswordDto usernamePasswordDto = UsernamePasswordDto.builder()
                 .nickname(nickname)
                 .password(password)
+                .type(type)
                 .build();
 
         // отправка сообщения

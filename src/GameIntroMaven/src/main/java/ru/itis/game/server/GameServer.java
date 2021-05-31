@@ -84,10 +84,16 @@ public class GameServer {
                         // тогда нужно сконвертировать в UsernamePasswordDto, т.е. преобразовать в объект UsernamePasswordDto
                         UsernamePasswordDto usernamePasswordDto =
                                 objectMapper.readValue(authenticationMessage, UsernamePasswordDto.class);
-                        System.out.println(usernamePasswordDto.getNickname());
-                        System.out.println(usernamePasswordDto.getPassword());
 
-                        // если аутентифицирован
+//                        System.out.println(usernamePasswordDto.getNickname());
+//                        System.out.println(usernamePasswordDto.getPassword());
+
+                        // если запрос пришёл на регистраццю
+                        if (usernamePasswordDto.getType().equals("signUp")) {
+                            gameService.singUp(usernamePasswordDto);
+                        }
+
+                        // выполняем аутентификацию пользователя
                         if (gameService.authenticate(usernamePasswordDto)) {
                             // ставим флаг, что аутентифицирован, это выкинет из цикла while (!isAuthenticated)
                             isAuthenticated = true;

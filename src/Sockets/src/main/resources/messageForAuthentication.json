@@ -1,4 +1,5 @@
 {
   "nickname": "Марсель",
-  "password": "qwerty007"
+  "password": "qwerty007",
+  "type" : "singUp/signIn"
 }

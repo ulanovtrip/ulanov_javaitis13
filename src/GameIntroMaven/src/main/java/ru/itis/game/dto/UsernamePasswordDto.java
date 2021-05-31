@@ -12,4 +12,5 @@ import lombok.NoArgsConstructor;
 public class UsernamePasswordDto {
     private String nickname;
     private String password;
+    private String type;
 }

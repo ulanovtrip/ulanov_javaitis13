@@ -6,7 +6,7 @@ import ru.itis.game.config.ApplicationConfig;
 import ru.itis.game.server.GameServer;
 
 
-public class Main {
+public class MainServer {
     public static void main(String[] args) {
         ApplicationContext context = new AnnotationConfigApplicationContext(ApplicationConfig.class);
         // забираем бин

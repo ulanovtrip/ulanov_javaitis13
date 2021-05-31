@@ -31,4 +31,6 @@ public interface GameService {
     boolean shot(Long gameId, String shooterNickname, String targetNickname);
 
     void finishGame(Long gameId);
+
+    void singUp(UsernamePasswordDto usernamePasswordDto);
 }

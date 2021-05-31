@@ -18,7 +18,7 @@ public class PlayersRepositoryJdbcTemplateImpl implements PlayersRepository {
     private static final String SQL_FIND_BY_NICKNAME = "select * from player where nickname = ?";
 
     //language=SQL
-    private static final String SQL_INSERT_PLAYER = "insert into player(nickname) values (?)";
+    private static final String SQL_INSERT_PLAYER = "insert into player(nickname, password) values (?, ?)";
 
     private RowMapper<Player> playerRowMapper = (row, rowNumber) -> Player.builder()
             .id(row.getLong("id"))
@@ -54,7 +54,7 @@ public class PlayersRepositoryJdbcTemplateImpl implements PlayersRepository {
 
     @Override
     public void save(Player account) {
-        jdbcTemplate.update(SQL_INSERT_PLAYER, account.getNickname());
+        jdbcTemplate.update(SQL_INSERT_PLAYER, account.getNickname(), account.getPassword());
     }
 
     @Override

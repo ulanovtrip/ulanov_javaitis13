@@ -1,6 +1,7 @@
 package ru.itis.game.services;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Component;
 import ru.itis.game.dto.MessageDto;
 import ru.itis.game.dto.UsernamePasswordDto;
@@ -25,6 +26,8 @@ public class GameServiceImpl implements GameService {
     private MessagesRepository messagesRepository;
     @Autowired
     private ClientsRepository clientsRepository;
+    @Autowired
+    private PasswordEncoder passwordEncoder;
 
     @Override
     public void connect(String ip) {
@@ -55,13 +58,11 @@ public class GameServiceImpl implements GameService {
             // достанем его
             Player player = playerOptional.get();
             // если пароли совпали, то true
-            if (player.getPassword().equals(usernamePasswordDto.getPassword())) {
-                return true;
-            }
+            // тут сравниваются сырой пароль и пароль и зашифрованный
+            return passwordEncoder.matches(usernamePasswordDto.getPassword(), player.getPassword());
         } else {
             return false;
         }
-        return false;
     }
 
     @Override
@@ -121,6 +122,18 @@ public class GameServiceImpl implements GameService {
         } else {
             throw new IllegalArgumentException("Game not found");
         }
+    }
+
+    @Override
+    public void singUp(UsernamePasswordDto usernamePasswordDto) {
+        // собираем объект
+        Player player = Player.builder()
+                .nickname(usernamePasswordDto.getNickname())
+                // зашифровываем пароль в формате BCrypt
+                .password(passwordEncoder.encode(usernamePasswordDto.getPassword()))
+                .build();
+
+        playersRepository.save(player);
     }
 
     private Player getPlayer(String nickname) {

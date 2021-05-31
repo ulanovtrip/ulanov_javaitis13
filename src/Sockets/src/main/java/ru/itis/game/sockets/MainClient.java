@@ -9,8 +9,18 @@ public class MainClient {
     public static void main(String[] args) {
 
         GameClient gameClient = new GameClient("localhost", 7777);
-
         Scanner scanner = new Scanner(System.in);
+
+        System.out.println("Хотите зарегаться?");
+        System.out.println("1. Да.");
+        System.out.println("2. Нет.");
+        System.out.println("Введите число:");
+
+        int answer = scanner.nextInt();
+
+        String type = answer == 1 ? "signUp" : "signIn";
+        scanner.nextLine(); // это надо сделать чтобы пропустить строку
+
         System.out.println("Введите имя:");
         String nickName = scanner.nextLine();
         System.out.println("Введите пароль:");
@@ -20,7 +30,7 @@ public class MainClient {
         gameClient.setFrom(nickName);
 
         // отправляем аутентификацию на сервер, т.е. отправляем логин/пароль на проверку
-        gameClient.sendAuthentication(nickName, password);
+        gameClient.sendAuthentication(nickName, password, type);
 
         // пока соединение есть
         // чтобы закрыть соединение, нужно вводить ещё одно сообщение вконце ввода
